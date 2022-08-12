@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button).setOnClickListener(v -> {
             getLocation();
             Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
-                    Uri.parse("http://maps.google.com/maps?saddr=" + latitude + "," + longitude + "&daddr=40.8666026,-74.199832"));
+                    Uri.parse("http://maps.google.com/maps?saddr=" + latitude + "," + longitude + "&daddr=40.8666026,-74.1975"));
             startActivity(intent);
         });
     }
@@ -74,11 +74,6 @@ public class MainActivity extends AppCompatActivity {
                     longitude = location.getLongitude();
                 }
             });
-
-            Toast.makeText(this, latitude + " " + longitude, Toast.LENGTH_SHORT).show();
-        }
-        else {
-            Toast.makeText(this, "Location is disabled!", Toast.LENGTH_SHORT).show();
         }
     }
 }
