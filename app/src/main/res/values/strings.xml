@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Drive To MSU</string>
+    <string name="description">This handy application will help show where Montclair State University is. Upon pressing the button below, the directions to Montclair State University by car will be given through Google Maps.</string>
+    <string name="drive">Show Location</string>
+</resources>
